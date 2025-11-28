@@ -1,0 +1,20 @@
+{
+  "name": "create-arcanajs-app",
+  "version": "0.2.2",
+  "description": "CLI to bootstrap ArcanaJS applications",
+  "type": "module",
+  "bin": {
+    "create-arcanajs-app": "./bin/cli.js"
+  },
+  "scripts": {},
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "execa": "^9.6.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^13.0.1",
+    "ora": "^9.0.0"
+  },
+  "author": "mohammed ben cheikh",
+  "license": "ISC"
+}
