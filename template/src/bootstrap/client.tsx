@@ -1,7 +1,7 @@
+import "@/resources/css/globals.css";
 import { hydrateArcanaJS } from "arcanajs/client";
-import "./globals.css";
 
 // @ts-ignore
-const views = require("arcana-views");
+const views = require("arcanajs-views");
 
 hydrateArcanaJS(views);

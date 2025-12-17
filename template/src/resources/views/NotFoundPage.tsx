@@ -1,12 +1,10 @@
-import { Body, Head, Link, Page } from "arcanajs/client";
+import { NotFoundPageData } from "@/types/NotFoundPageData";
+import { Body, Head, Link, Page, usePage } from "arcanajs/client";
 
-interface NotFoundPageProps {
-  url?: string;
-}
-
-export default function NotFoundPage({ url }: NotFoundPageProps) {
+export default function NotFoundPage() {
+  const { url } = usePage<NotFoundPageData>();
   return (
-    <Page>
+    <Page> 
       <Head>
         <title>404 - Page Not Found</title>
         <meta

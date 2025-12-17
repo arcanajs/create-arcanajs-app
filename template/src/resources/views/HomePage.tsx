@@ -1,8 +1,8 @@
+import type { HomePageData } from "@/types/HomePageData";
 import { Body, Head, Page, usePage } from "arcanajs/client";
-import type { HomePageData } from "../types/HomePageData";
 
 export default function HomePage() {
-  const pageData = usePage<HomePageData | null>();
+  const pageData = usePage<HomePageData>();
 
   return (
     <Page>
@@ -299,23 +299,11 @@ export default function HomePage() {
                   <div className="bg-black/50 rounded-xl p-6 text-sm font-mono text-gray-300 overflow-x-auto border border-white/10 shadow-inner">
                     <div className="mb-4">
                       <div className="text-gray-500 mb-1">
-                        # Create a new folder
-                      </div>
-                      <div className="text-orange-400">
-                        mkdir my-app cd my-app
-                      </div>
-                    </div>
-                    <div className="mb-4">
-                      <div className="text-gray-500 mb-1">
                         # Initialize a new project
                       </div>
-                      <div className="text-orange-400">npx arcanajs init</div>
-                    </div>
-                    <div className="mb-4">
-                      <div className="text-gray-500 mb-1">
-                        # Install dependencies
+                      <div className="text-orange-400">
+                        npx create-arcanajs-app
                       </div>
-                      <div className="text-white">npm install</div>
                     </div>
                     <div className="mb-4">
                       <div className="text-gray-500 mb-1">
