@@ -113,13 +113,13 @@ program
       const packageJson = await fs.readJson(packageJsonPath);
       packageJson.name = appName;
 
-      spinner.text = "Fetching latest dependency versions...";
-      const [deps, devDeps] = await Promise.all([
-        withLatestVersions(packageJson.dependencies),
-        withLatestVersions(packageJson.devDependencies),
-      ]);
-      packageJson.dependencies = deps;
-      packageJson.devDependencies = devDeps;
+      // spinner.text = "Fetching latest dependency versions...";
+      // const [deps, devDeps] = await Promise.all([
+      //   withLatestVersions(packageJson.dependencies),
+      //   withLatestVersions(packageJson.devDependencies),
+      // ]);
+      // packageJson.dependencies = deps;
+      // packageJson.devDependencies = devDeps;
 
       spinner.text = "Configuring package.json...";
       await fs.writeJson(packageJsonPath, packageJson, { spaces: 2 });
