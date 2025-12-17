@@ -1,8 +1,6 @@
 import { AppServiceProvider } from "@/app/Providers/AppServiceProvider";
-import databaseConfig from "@/config/database";
 import apiRoutes from "@/routes/api";
 import webRoutes from "@/routes/web";
-import { DatabaseProvider } from "arcanajs/arcanox";
 import { ArcanaJSServer } from "arcanajs/server";
 
 const PORT = process.env.PORT || 3000;
@@ -14,10 +12,9 @@ const server = new ArcanaJSServer({
   apiBase: "/api",
   autoDiscovery: {
     enabled: true,
-    debug: true, // Optional: enable debug logging
+    debug: false, // Optional: enable debug logging
   },
-  database: databaseConfig,
-  providers: [AppServiceProvider, DatabaseProvider],
+  providers: [AppServiceProvider],
 });
 
 server.start();
