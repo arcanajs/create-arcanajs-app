@@ -127,6 +127,7 @@ program
       // Create .gitignore
       const gitignoreContent = `node_modules
 dist
+.arcanajs
 .env
 .DS_Store
 coverage
