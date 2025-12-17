@@ -1,6 +1,6 @@
 {
   "name": "create-arcanajs-app",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "description": "CLI to bootstrap ArcanaJS applications",
   "type": "module",
   "bin": {
