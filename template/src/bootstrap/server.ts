@@ -12,6 +12,10 @@ const server = new ArcanaJSServer({
   routes: webRoutes,
   apiRoutes: apiRoutes,
   apiBase: "/api",
+  autoDiscovery: {
+    enabled: true,
+    debug: true, // Optional: enable debug logging
+  },
   database: databaseConfig,
   providers: [AppServiceProvider, DatabaseProvider],
 });

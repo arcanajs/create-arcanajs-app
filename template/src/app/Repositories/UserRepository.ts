@@ -1,8 +1,10 @@
-import { User } from "../Models/User";
+import { Repository } from "arcanajs/di";
+import User from "../Models/User";
 
+@Repository()
 class UserRepository {
-  async findById(id: number): Promise<User | null> {
-    return await User.find(id);
+  async findById(id: string) {
+    return await User.with("comments").where("id", id).first();
   }
 }
 

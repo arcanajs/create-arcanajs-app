@@ -1,4 +1,4 @@
-import { ServiceProvider } from "arcanajs/server";
+import { ServiceProvider } from "arcanajs/di";
 
 export class AppServiceProvider extends ServiceProvider {
   /**

@@ -1,11 +1,10 @@
-import { Service } from "arcanajs/server";
+import { Service } from "arcanajs/di";
 import UserRepository from "../Repositories/UserRepository";
 
 @Service()
 class UserService {
   constructor(private userRepository: UserRepository) {}
-
-  async findById(id: number) {
+  async findById(id: string) {
     return await this.userRepository.findById(id);
   }
 }
