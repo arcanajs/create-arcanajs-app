@@ -8,7 +8,7 @@
     "start": "arcanajs start"
   },
   "dependencies": {
-    "arcanajs": "^6.1.0-beta.2",
+    "arcanajs": "^6.1.0-beta.3",
     "react": "^19.2.1",
     "react-dom": "^19.2.1"
   },
