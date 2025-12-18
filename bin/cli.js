@@ -77,7 +77,7 @@ program
           type: "input",
           name: "projectName",
           message: "What is the name of your project?",
-          default: "my-arcana-app",
+          default: "my-arcanajs-app",
           validate: (input) => {
             if (/^([a-z0-9-_.]+)$/.test(input)) return true;
             return "Project name may only include letters, numbers, underscores and hashes.";
